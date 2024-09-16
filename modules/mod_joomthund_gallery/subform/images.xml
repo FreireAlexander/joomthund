@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <field
+		name="aspect_ratio"
+		type="text"
+		default="1/1"
+		label="JOOMTHUND_ASPECT_RATIO"
+		hint="withd/height"
+		
+	/>
+	<field
+		name="padding"
+		type="text"
+		default="10px"
+		label="JOOMTHUND_PADDING"
+		hint="JOOMTHUND_CSS_UNITS_DESC"
+		description="JOOMTHUND_CSS_UNITS_DESC"
+		
+	/>
+    <field
+		name="border_width"
+		type="text"
+		default="1px"
+		label="JOOMTHUND_BORDER_WIDTH"
+		hint="JOOMTHUND_CSS_UNITS_DESC"
+		description="JOOMTHUND_CSS_UNITS_DESC"
+		
+	/>
+	<field
+	    name="border_style"
+		type="list"
+		default="solid"
+		label="JOOMTHUND_BORDER_STYLE"
+	    
+	    >
+	    <option value="solid">solid</option>
+	    <option value="dashed">dashed</option>
+	    <option value="dotted">dotted</option>
+	    <option value="double">double</option>
+	    <option value="groove">groove</option>
+	    <option value="inset">inset</option>
+	    <option value="outset">outset</option>
+	    <option value="ridge">ridge</option>
+	</field>
+	
+	<field
+		name="border_radius"
+		type="text"
+		default="20px"
+		label="JOOMTHUND_BORDER_RADIUS"
+		hint="JOOMTHUND_CSS_UNITS_DESC"
+		description="JOOMTHUND_CSS_UNITS_DESC"
+		
+	/>
+	
+	<field
+		name="border_color"
+		type="colorpicker"
+		default="silver"
+		label="JOOMTHUND_BORDER_COLOR"
+		class="inputbox"
+		
+	/>
+	
+	<field
+	    name="object_fit"
+		type="list"
+		default="scale-down"
+		label="JOOMTHUND_OBJECT_FIT"
+	    
+	    >
+	    <option value="scale-down">scale down</option>
+	    <option value="contain">contain</option>
+	    <option value="cover">cover</option>
+	</field>
+</form>

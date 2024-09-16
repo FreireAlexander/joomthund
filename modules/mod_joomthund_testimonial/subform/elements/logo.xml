@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+        <field type="note" name="note_basics" label="JOOMTHUND_BASIC_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+        
+        <field
+			name="size"
+			type="text"
+			default="80px"
+			label="JOOMTHUND_SIZE"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+		    name="align_self"
+			type="list"
+			default="end"
+			label="JOOMTHUND_ALIGN_SELF"
+		    
+		    >
+		    <option value="center">center</option>
+		    <option value="start">left</option>
+		    <option value="end">right</option>
+		</field>
+		
+		
+</form>

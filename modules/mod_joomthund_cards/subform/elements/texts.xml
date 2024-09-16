@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+        <field type="note" name="note_basics" label="JOOMTHUND_BASIC_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+				
+		<field
+			name="height"
+			type="text"
+			default="50px"
+			label="JOOMTHUND_HEIGHT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_top"
+			type="text"
+			default="5px"
+			label="JOOMTHUND_PADDING_TOP"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_bottom"
+			type="text"
+			default="5px"
+			label="JOOMTHUND_PADDING_BOTTOM"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_left"
+			type="text"
+			default="5px"
+			label="JOOMTHUND_PADDING_LEFT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_right"
+			type="text"
+			default="5px"
+			label="JOOMTHUND_PADDING_RIGHT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="font_color"
+			type="colorpicker"
+			default="darkgray"
+			label="JOOMTHUND_COLOR"
+			class="inputbox"
+			
+		/>
+		<field
+			name="font_color__hover"
+			type="colorpicker"
+			default="black"
+			label="JOOMTHUND_COLOR__HOVER"
+			class="inputbox"
+			
+		/>
+		
+		<field
+			name="font_size"
+			type="text"
+			default="24px"
+			label="JOOMTHUND_FONT_SIZE"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+		    name="font_weight"
+			type="list"
+			default="800"
+			label="JOOMTHUND_FONT_WEIGHT"
+		    
+		    >
+		    <option value="100">100</option>
+		    <option value="200">200</option>
+		    <option value="300">300</option>
+		    <option value="400">400</option>
+		    <option value="500">500</option>
+		    <option value="600">600</option>
+		    <option value="700">700</option>
+		    <option value="800">800</option>
+		    <option value="900">900</option>
+		    <option value="bold">bold</option>
+		    <option value="bolder">bolder</option>
+		    <option value="lighter">lighter</option>
+		</field>
+		
+		<field
+		    name="text_align"
+			type="list"
+			default="center"
+			label="JOOMTHUND_TEXT_ALIGN"
+		    
+		    >
+		    <option value="center">center</option>
+		    <option value="left">left</option>
+		    <option value="right">right</option>
+		    <option value="justify">justify</option>
+		</field>
+		
+		<field type="note" name="note_advanced" label="JOOMTHUND_ADVANCED_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+		
+		<field
+		    name="text_wrap"
+			type="list"
+			default="balance"
+			label="JOOMTHUND_TEXT_WRAP"
+		    
+		    >
+		    <option value="balance">balance</option>
+		    <option value="nowrap">nowrap</option>
+		    <option value="pretty">pretty</option>
+		    <option value="wrap">wrap</option>
+		</field>
+				
+		<field
+		    name="align_items"
+			type="list"
+			default="center"
+			label="JOOMTHUND_ALIGN_ITEMS"
+		    
+		    >
+		    <option value="center">center</option>
+		    <option value="start">up</option>
+		    <option value="end">bottom</option>
+		</field>
+		
+		<field
+		    name="justify_content"
+			type="list"
+			default="center"
+			label="JOOMTHUND_JUSTIFY_CONTENT"
+		    
+		    >
+		    <option value="center">center</option>
+		    <option value="left">left</option>
+		    <option value="right">right</option>
+		</field>
+		
+		<field
+		    name="overflow"
+			type="list"
+			default="scroll"
+			label="JOOMTHUND_OVERFLOW"
+		    
+		    >
+		    <option value="scroll">scroll</option>
+		    <option value="hidden">hidden</option>
+		</field>
+</form>

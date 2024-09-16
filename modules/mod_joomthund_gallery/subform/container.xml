@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+        <field type="note" name="note_basic_settings" label="JOOMTHUND_BASIC_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+        
+        <field
+			name="background_color"
+			type="colorpicker"
+			default="snow"
+			label="JOOMTHUND_BACKGROUND_COLOR"
+			class="inputbox"
+			
+		/>
+		
+		<field
+	        name="border_radius"
+	        type="text"
+	        default="20px"
+	        label="JOOMTHUND_BORDER_RADIUS"
+	        hint="JOOMTHUND_CSS_UNITS_DESC"
+	        description="JOOMTHUND_CSS_UNITS_DESC"
+		
+	    />
+		
+		<field
+			name="row_gap"
+			type="text"
+			default="5px"
+			label="JOOMTHUND_ROW_GAP"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="column_gap"
+			type="text"
+			default="5px"
+			label="JOOMTHUND_COLUMN_GAP"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="padding_top"
+			type="text"
+			default="10px"
+			label="JOOMTHUND_PADDING_TOP"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_bottom"
+			type="text"
+			default="10px"
+			label="JOOMTHUND_PADDING_BOTTOM"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_left"
+			type="text"
+			default="20px"
+			label="JOOMTHUND_PADDING_LEFT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_right"
+			type="text"
+			default="20px"
+			label="JOOMTHUND_PADDING_RIGHT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field type="note" name="note_advanced_settings" label="JOOMTHUND_ADVANCED_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+		
+		<field
+		    name="flex_wrap"
+			type="list"
+			default="center"
+			label="JOOMTHUND_FLEX_WRAP"
+		    
+		    >
+		    <option value="wrap">wrap</option>
+		    <option value="nowrap">nowrap</option>
+		</field>
+        
+        <field
+		    name="align_items"
+			type="list"
+			default="center"
+			label="JOOMTHUND_ALIGN_ITEMS"
+		    
+		    >
+		    <option value="center">center</option>
+		    <option value="start">up</option>
+		    <option value="end">bottom</option>
+		</field>
+		
+		<field
+		    name="justify_content"
+			type="list"
+			default="center"
+			label="JOOMTHUND_JUSTIFY_CONTENT"
+		    
+		    >
+		    <option value="center">center</option>
+		    <option value="left">left</option>
+		    <option value="right">right</option>
+		</field>
+				
+		
+		
+		
+</form>

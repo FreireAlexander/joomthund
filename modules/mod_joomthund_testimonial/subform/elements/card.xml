@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+        <field type="note" name="note_basics" label="JOOMTHUND_BASIC_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+        
+        <field
+			name="background_color"
+			type="colorpicker"
+			default="rgba(245,245,247,0.85)"
+			label="JOOMTHUND_BACKGROUND_COLOR"
+			class="inputbox"
+			
+		/>
+				
+		<field
+			name="padding_top"
+			type="text"
+			default="20px"
+			label="JOOMTHUND_PADDING_TOP"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_bottom"
+			type="text"
+			default="20px"
+			label="JOOMTHUND_PADDING_BOTTOM"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_left"
+			type="text"
+			default="10px"
+			label="JOOMTHUND_PADDING_LEFT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_right"
+			type="text"
+			default="10px"
+			label="JOOMTHUND_PADDING_RIGHT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+		    name="border_width"
+		    type="text"
+		    default="2px"
+		    label="JOOMTHUND_BORDER_WIDTH"
+		    hint="JOOMTHUND_CSS_UNITS_DESC"
+		    description="JOOMTHUND_CSS_UNITS_DESC"
+				
+			/>
+		<field
+		    name="border_style"
+			type="list"
+			default="solid"
+			label="JOOMTHUND_BORDER_STYLE"
+
+		    >
+		    <option value="solid">solid</option>
+		    <option value="dashed">dashed</option>
+		    <option value="dotted">dotted</option>
+		    <option value="double">double</option>
+		    <option value="groove">groove</option>
+		    <option value="inset">inset</option>
+		    <option value="outset">outset</option>
+			<option value="ridge">ridge</option>
+		</field>
+				
+		<field
+			name="border_radius"
+			type="text"
+			default="0 50px 0 50px "
+			label="JOOMTHUND_BORDER_RADIUS"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+		
+		/>
+		
+		<field
+			name="border_color"
+			type="colorpicker"
+			default="rgba(29,30,29,1)"
+			label="JOOMTHUND_BORDER_COLOR"
+			class="inputbox"
+		
+		/>
+		
+		<field type="note" name="note_advanced" label="JOOMTHUND_ADVANCED_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+		
+		<field
+			name="height"
+			type="text"
+			default="500px"
+			label="JOOMTHUND_HEIGHT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="max_width"
+			type="text"
+			default="300px"
+			label="JOOMTHUND_MAX_WIDTH"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="min_width"
+			type="text"
+			default="600px"
+			label="JOOMTHUND_MIN_WIDTH"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+</form>

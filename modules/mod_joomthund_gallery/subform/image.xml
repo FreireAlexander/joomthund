@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <field
+        name="image"
+        type="media"
+        label="MOD_JOOMTHUND_GALLERY_SUBFORM_IMG"
+    />
+</form>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+				
+		<field
+			name="comment"
+			type="textarea"
+            rows="10"
+			label="MOD_JOOMTHUND_TESTIMONIAL_SUBFORM_COMMENT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="name"
+			type="text"
+
+			label="MOD_JOOMTHUND_TESTIMONIAL_SUBFORM_NAME"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="role"
+			type="text"
+
+			label="MOD_JOOMTHUND_TESTIMONIAL_SUBFORM_ROLE"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="company"
+			type="text"
+
+			label="MOD_JOOMTHUND_TESTIMONIAL_SUBFORM_COMPANY"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="address"
+			type="text"
+
+			label="MOD_JOOMTHUND_TESTIMONIAL_SUBFORM_ADDRESS"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+            name="logo"
+            type="media"
+            label="MOD_JOOMTHUND_TESTIMONIAL_SUBFORM_LOGO"
+        />
+		
+		
+</form>

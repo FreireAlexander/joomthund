@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>MOD_JOOMTHUND_GALLERY_NAME</name>
+	<author>Freire Alexander Palomino Palma</author>
+	<creationDate>2024-04</creationDate>
+	<copyright>(C) 2024 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>freirealexander0214@gmail.com</authorEmail>
+	<authorUrl>www.freirealexander.github.io</authorUrl>
+	<version>1.0.1</version>
+	<description>MOD_JOOMTHUND_GALLERY_DESCRIPTION</description>
+	<files>
+		<filename module="MOD_JOOMTHUND_GALLERY">mod_joomthund_gallery.php</filename>
+		<folder>admin</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>subform</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>helper.php</filename>
+		<filename>mod_joomthund_gallery.xml</filename>
+	</files>
+	<languages>
+	    <language tag="en-GB">/language/en-GB/mod_joomthund_gallery.sys.ini</language>
+		<language tag="en-GB">/language/en-GB/mod_joomthund_gallery.ini</language>
+	</languages>
+	<config>
+	    <form>
+	        
+	    
+		<fields name="params" addfieldpath="/modules/mod_joomthund_gallery/admin/fields">
+			<fieldset name="basic">
+			    
+			    <field
+						name="layout"
+						type="modulelayout"
+						label="JOOMTHUND_LAYOUT"
+						class="custom-select"
+						default="default"
+				/>
+                <field type="note" name="note1" label="MOD_JOOMTHUND_GALLERY_NOTE1" class="alert alert-info col-12 text-center" />
+                <field
+						name="min_columns"
+						type="number"
+						label="MOD_JOOMTHUND_GALLERY_MIN_COLUMNS"
+						min="1"
+						max="100"
+						step="1"
+						default="3"
+				/>
+				<field
+						name="max_columns"
+						type="number"
+						label="MOD_JOOMTHUND_GALLERY_MAX_COLUMNS"
+						min="1"
+						max="100"
+						step="1"
+						default="5"
+				/>
+				<field type="note" name="note2" label="MOD_JOOMTHUND_GALLERY_NOTE2" class="alert alert-info col-12 text-center" />
+				<field
+                    name="options"
+                    type="radio"
+                    label="MOD_JOOMTHUND_GALLERY_OPTIONS"
+                    default="1"
+                    class="btn-group"
+	            >
+                    <option value="1">MOD_JOOMTHUND_GALLERY_OPTIONS_1</option>
+                    <option value="2">MOD_JOOMTHUND_GALLERY_OPTIONS_2</option>
+                </field>
+				<field
+						name="images_"
+						type="subform"
+						label="MOD_JOOMTHUND_GALLERY_IMAGES"
+						min="1"
+						max="100"
+						formsource="/modules/mod_joomthund_gallery/subform/image.xml"
+						multiple="true"
+						layout="joomla.form.field.subform.repeatable"
+						buttons="add,remove,move"
+						showon="options:1"
+				/>
+				<field 
+				    name="folder" 
+				    type="folderlist" 
+				    default="" 
+				    label="MOD_JOOMTHUND_GALLERY_FOLDERLIST"
+				    description="MOD_JOOMTHUND_GALLERY_FOLDERLIST_DESCR"
+				    directory="images" 
+				    filter="(.jpg|.jpeg|.gif|.bmp)"
+                    exclude="index.html"
+                    hide_none="true"
+                    hide_default="true"
+				    recursive="true"
+				    showon="options:2"
+				/>
+			</fieldset>
+			<fieldset name="ColorPalette" label="MOD_JOOMTHUND_GALLERY_COLORPALETTE">
+				<field
+						name="colorPalette_"
+						type="subform"
+						label="JOOMTHUND_COLOR_PALETTE_FIELD"
+						min="1"
+						max="100"
+						default='{"colors:[{"colors_name":"‏‏‎‎‎‎‎‎", "colors_value":"rgba(37,7,3,1)", }]"}'
+						formsource="/modules/mod_joomthund_gallery/subform/colorPalette.xml"
+						multiple="true"
+						layout="joomla.form.field.subform.repeatable"
+						buttons="add,remove,move"
+				/>
+			</fieldset>
+			<fieldset name="style" label="MOD_JOOMTHUND_GALLERY_FIELDSET_STYLE">
+			    
+			    
+			    <field
+                name="components"
+                type="radio"
+                label="MOD_JOOMTHUND_GALLERY_STYLE"
+                default="1"
+                class="btn-group"
+	            >
+                    <option value="1">MOD_JOOMTHUND_GALLERY_STYLE_1</option>
+                    <option value="2">MOD_JOOMTHUND_GALLERY_STYLE_2</option>
+                </field>
+                
+                <field
+						name="container_"
+						type="subform"
+						label="MOD_JOOMTHUND_GALLERY_CONTAINER"
+						formsource="/modules/mod_joomthund_gallery/subform/container.xml"
+						layout="joomla.form.field.subform.repeatable"
+						buttons="add,remove,move"
+						showon="components:1"
+				/>
+				
+				<field
+						name="imagesSettings_"
+						type="subform"
+						label="MOD_JOOMTHUND_GALLERY_CONTAINER"
+						formsource="/modules/mod_joomthund_gallery/subform/images.xml"
+						layout="joomla.form.field.subform.repeatable"
+						buttons="add,remove,move"
+						showon="components:2"
+				/>
+				
+			</fieldset>
+		</fields>
+		</form>
+	</config>
+</extension>

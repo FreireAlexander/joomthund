@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+        <field type="note" name="note_basics" label="JOOMTHUND_BASIC_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+        
+        <field
+		    name="text_align"
+			type="list"
+			default="right"
+			label="JOOMTHUND_TEXT_ALIGN"
+		    
+		    >
+		    <option value="center">center</option>
+		    <option value="left">left</option>
+		    <option value="right">right</option>
+		    <option value="justify">justify</option>
+		</field>
+				
+        <field
+			name="font_color"
+			type="colorpicker"
+			default="rgba(30,29,30, 1)"
+			label="JOOMTHUND_COLOR"
+			class="inputbox"
+			
+		/>
+		
+		<field
+			name="font_size"
+			type="text"
+			default="1.2rem"
+			label="JOOMTHUND_FONT_SIZE"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+		    name="font_weight"
+			type="list"
+			default="400"
+			label="JOOMTHUND_FONT_WEIGHT"
+		    
+		    >
+		    <option value="100">100</option>
+		    <option value="200">200</option>
+		    <option value="300">300</option>
+		    <option value="400">400</option>
+		    <option value="500">500</option>
+		    <option value="600">600</option>
+		    <option value="700">700</option>
+		    <option value="800">800</option>
+		    <option value="900">900</option>
+		    <option value="bold">bold</option>
+		    <option value="bolder">bolder</option>
+		    <option value="lighter">lighter</option>
+		</field>
+		
+		<field
+		    name="font_style"
+			type="list"
+			default="normal"
+			label="JOOMTHUND_FONT_STYLE"
+		    
+		    >
+		    <option value="normal">normal</option>
+		    <option value="italic">italic</option>
+		    <option value="oblique">oblique</option>
+		</field>
+        
+		<field
+			name="padding_top"
+			type="text"
+			default="5px"
+			label="JOOMTHUND_PADDING_TOP"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_bottom"
+			type="text"
+			default="5px"
+			label="JOOMTHUND_PADDING_BOTTOM"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_left"
+			type="text"
+			default="0"
+			label="JOOMTHUND_PADDING_LEFT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_right"
+			type="text"
+			default="0"
+			label="JOOMTHUND_PADDING_RIGHT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		
+</form>

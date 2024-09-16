@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+            <field
+                name="image"
+                type="media"
+                
+                label="MOD_JOOMTHUND_CARDS_SUBFORM_IMG"
+                
+            />
+            <field
+                name="title"
+                type="text"
+                label="MOD_JOOMTHUND_CARDS_SUBFORM_TITLE"
+                filter="raw"
+                
+            />
+            <field
+                name="description"
+                type="text"
+                label="MOD_JOOMTHUND_CARDS_SUBFORM_DESCRIPTION"
+                filter="raw"
+                
+            />
+            <field 
+                name="href" 
+                type="menuitem"
+                label="MOD_JOOMTHUND_CARDS_SUBFORM_HREF" 
+                description="MOD_JOOMTHUND_CARDS_SUBFORM_HREF_DESC" 
+                >
+                <option	value="#">JNONE</option>
+            </field>
+</form>

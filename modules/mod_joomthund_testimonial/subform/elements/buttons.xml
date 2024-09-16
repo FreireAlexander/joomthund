@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+        <field type="note" name="note_basics" label="JOOMTHUND_BASIC_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+        
+        <field
+			name="size"
+			type="text"
+			default="3rem"
+			label="JOOMTHUND_SIZE"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="font_size"
+			type="text"
+			default="2rem"
+			label="JOOMTHUND_FONT_SIZE"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+        
+        <field
+			name="background_color"
+			type="colorpicker"
+			default="rgba(245,245,247,0.85)"
+			label="JOOMTHUND_BACKGROUND_COLOR"
+			class="inputbox"
+			
+		/>
+		
+		<field
+			name="background_color__hover"
+			type="colorpicker"
+			default="rgba(245,245,247,1)"
+			label="JOOMTHUND_BACKGROUND_COLOR__HOVER"
+			class="inputbox"
+			
+		/>
+				
+		
+		
+		
+		<field type="note" name="note_advanced" label="JOOMTHUND_ADVANCED_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+		
+		<field
+		    name="border_width"
+		    type="text"
+		    default="2px"
+		    label="JOOMTHUND_BORDER_WIDTH"
+		    hint="JOOMTHUND_CSS_UNITS_DESC"
+		    description="JOOMTHUND_CSS_UNITS_DESC"
+				
+			/>
+		<field
+		    name="border_style"
+			type="list"
+			default="solid"
+			label="JOOMTHUND_BORDER_STYLE"
+
+		    >
+		    <option value="solid">solid</option>
+		    <option value="dashed">dashed</option>
+		    <option value="dotted">dotted</option>
+		    <option value="double">double</option>
+		    <option value="groove">groove</option>
+		    <option value="inset">inset</option>
+		    <option value="outset">outset</option>
+			<option value="ridge">ridge</option>
+		</field>
+				
+		<field
+			name="border_radius"
+			type="text"
+			default="50%"
+			label="JOOMTHUND_BORDER_RADIUS"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+		
+		/>
+		
+		<field
+			name="border_color"
+			type="colorpicker"
+			default="rgba(29,30,29,1)"
+			label="JOOMTHUND_BORDER_COLOR"
+			class="inputbox"
+		
+		/>
+		
+		
+</form>

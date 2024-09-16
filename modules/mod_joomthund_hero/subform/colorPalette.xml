@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <fields name="colors">
+        <fieldset name="color">
+            <field
+                name="color_name"
+                type="text"
+                label="JOOMTHUND_COLOR_NAME"
+            />
+            <field
+                name="color_value"
+                type="color"
+                format="rgba"
+                label="JOOMTHUND_COLOR_VALUE"
+            />
+        </fieldset>
+    </fields>
+</form>

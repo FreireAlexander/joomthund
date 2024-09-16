@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>MOD_JOOMTHUND_TESTIMONIAL_NAME</name>
+	<author>Freire Alexander Palomino Palma</author>
+	<creationDate>2024-04</creationDate>
+	<copyright>(C) 2024 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>freirealexander0214@gmail.com</authorEmail>
+	<authorUrl>www.freirealexander.github.io</authorUrl>
+	<version>1.0.1</version>
+	<description>MOD_JOOMTHUND_TESTIMONIAL_DESCRIPTION</description>
+	<files>
+		<filename module="MOD_JOOMTHUND_TESTIMONIAL">mod_joomthund_testimonial.php</filename>
+		<folder>admin</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>subform</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>helper.php</filename>
+		<filename>mod_joomthund_testimonial.xml</filename>
+	</files>
+	<languages>
+	    <language tag="en-GB">/language/en-GB/mod_joomthund_testimonial.sys.ini</language>
+		<language tag="en-GB">/language/en-GB/mod_joomthund_testimonial.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_joomthund_testimonial/admin/fields">
+			<fieldset name="basic">
+			    <field
+						name="layout"
+						type="modulelayout"
+						label="JOOMTHUND_LAYOUT"
+						class="custom-select"
+						default="default"
+				/>
+                <field type="note" name="note1" label="MOD_JOOMTHUND_TESTIMONIAL_NOTE1" class="alert alert-info col-12 text-center" />
+                <field
+					name="testimonial_"
+					type="subform"
+					label="MOD_JOOMTHUND_TESTIMONIAL_"
+					formsource="/modules/mod_joomthund_testimonial/subform/testimonial.xml"
+					multiple="true"
+					layout="joomla.form.field.subform.repeatable"
+					buttons="add,remove,move"
+				/>
+			</fieldset>
+			<fieldset name="ColorPalette" label="MOD_JOOMTHUND_TESTIMONIAL_COLORPALETTE_COLORPALETTE">
+				<field
+						name="colorPalette_"
+						type="subform"
+						label="JOOMTHUND_COLOR_PALETTE_FIELD"
+						min="1"
+						max="100"
+						default='{"colors:[{"colors_name":"‏‏‎‎‎‎‎‎", "colors_value":"rgba(37,7,3,1)", }]"}'
+						formsource="/modules/mod_joomthund_testimonial/subform/colorPalette.xml"
+						multiple="true"
+						layout="joomla.form.field.subform.repeatable"
+						buttons="add,remove,move"
+				/>
+			</fieldset>
+			<fieldset name="Style" label="MOD_JOOMTHUND_TESTIMONIAL_STYLE">
+			    
+			    <field
+                    name="components"
+                    type="radio"
+                    label="MOD_JOOMTHUND_TESTIMONIAL_STYLE_"
+                    default="1"
+                    class="btn-group"
+	            >
+                    <option value="1">MOD_JOOMTHUND_TESTIMONIAL_STYLE_1</option>
+                    <option value="2">MOD_JOOMTHUND_TESTIMONIAL_STYLE_2</option>
+                    <option value="3">MOD_JOOMTHUND_TESTIMONIAL_STYLE_3</option>
+                    <option value="4">MOD_JOOMTHUND_TESTIMONIAL_STYLE_4</option>
+                    <option value="5">MOD_JOOMTHUND_TESTIMONIAL_STYLE_5</option>
+                    
+                </field>
+			    
+				<field
+					name="container_"
+					type="subform"
+					label="MOD_JOOMTHUND_CONTAINER_"
+					formsource="/modules/mod_joomthund_testimonial/subform/elements/container.xml"
+					showon="components:1"
+				/>
+				
+				<field
+					name="card_"
+					type="subform"
+					label="MOD_JOOMTHUND_SLIDE_CARD_"
+					formsource="/modules/mod_joomthund_testimonial/subform/elements/card.xml"
+					showon="components:2"
+				/>
+				
+				<field
+                    name="text_options"
+                    type="radio"
+                    label="MOD_JOOMTHUND_TESTIMONIAL_TEXT_OPTIONS_"
+                    default="1"
+                    class="btn-group"
+                    showon="components:3"
+	            >   
+	                <option value="0">MOD_JOOMTHUND_TESTIMONIAL_TEXT_OPTIONS_0</option>
+                    <option value="1">MOD_JOOMTHUND_TESTIMONIAL_TEXT_OPTIONS_1</option>
+                    <option value="2">MOD_JOOMTHUND_TESTIMONIAL_TEXT_OPTIONS_2</option>
+                    <option value="3">MOD_JOOMTHUND_TESTIMONIAL_TEXT_OPTIONS_3</option>
+                    
+                </field>
+                
+                <field
+					name="comment_height"
+					type="text"
+					label="MOD_JOOMTHUND_COMMENT_HEIGHT"
+					default="250px"
+					description="JOOMTHUND_CSS_UNITS_DESC"
+					hint="JOOMTHUND_CSS_UNITS_DESC"
+					showon="components:3[AND]text_options:0"
+				/>
+                
+                <field
+					name="comment_"
+					type="subform"
+					label="MOD_JOOMTHUND_COMMENT"
+					formsource="/modules/mod_joomthund_testimonial/subform/elements/texts.xml"
+			
+					showon="components:3[AND]text_options:0"
+				/> 
+				
+				<field
+					name="info_height"
+					type="text"
+					label="MOD_JOOMTHUND_INFO_HEIGHT"
+					default="250px"
+					description="JOOMTHUND_CSS_UNITS_DESC"
+					hint="JOOMTHUND_CSS_UNITS_DESC"
+					showon="components:3[AND]text_options!:0"
+				/>
+				
+				<field
+					name="name_"
+					type="subform"
+					label="MOD_JOOMTHUND_NAME"
+					formsource="/modules/mod_joomthund_testimonial/subform/elements/texts.xml"
+			
+					showon="components:3[AND]text_options:1"
+				/>
+				
+				
+				<field
+					name="role_"
+					type="subform"
+					label="MOD_JOOMTHUND_ROLE"
+					formsource="/modules/mod_joomthund_testimonial/subform/elements/texts.xml"
+					
+					showon="components:3[AND]text_options:2"
+				/>
+				
+				<field
+					name="company_"
+					type="subform"
+					label="MOD_JOOMTHUND_COMPANY"
+					formsource="/modules/mod_joomthund_testimonial/subform/elements/texts.xml"
+				
+					showon="components:3[AND]text_options:3"
+				/>
+				
+				<field
+					name="logo_"
+					type="subform"
+					label="MOD_JOOMTHUND_LOGO"
+					formsource="/modules/mod_joomthund_testimonial/subform/elements/logo.xml"
+					showon="components:4"
+				/>
+				
+				<field
+					name="buttons_"
+					type="subform"
+					label="MOD_JOOMTHUND_BUTTONS"
+					formsource="/modules/mod_joomthund_testimonial/subform/elements/buttons.xml"
+					showon="components:5"
+				/>
+				
+				
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

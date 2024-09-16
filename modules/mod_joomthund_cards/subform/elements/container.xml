@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+        <field type="note" name="note_basics" label="JOOMTHUND_BASIC_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+				
+		<field
+			name="padding_top"
+			type="text"
+			default="50px"
+			label="JOOMTHUND_PADDING_TOP"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_bottom"
+			type="text"
+			default="20px"
+			label="JOOMTHUND_PADDING_BOTTOM"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_left"
+			type="text"
+			default="20px"
+			label="JOOMTHUND_PADDING_LEFT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		<field
+			name="padding_right"
+			type="text"
+			default="20px"
+			label="JOOMTHUND_PADDING_RIGHT"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="row_gap"
+			type="text"
+			default="10px"
+			label="JOOMTHUND_ROW_GAP"
+			hint="JOOMTHUND_CSS_UNITS_DESC"
+			description="JOOMTHUND_CSS_UNITS_DESC"
+			
+		/>
+		
+		<field
+			name="background_color"
+			type="colorpicker"
+			default="transparent"
+			label="JOOMTHUND_BACKGROUND_COLOR"
+			class="inputbox"
+			
+		/>
+</form>

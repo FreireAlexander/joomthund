@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <field type="note" name="note1" label="JOOMTHUND_CARDS_NOTE1" class="alert alert-info col-12 m-3 text-center"  />
+        
+        <field
+			name="background_color"
+			type="colorpicker"
+			default="transparent"
+			label="JOOMTHUND_BACKGROUND_COLOR"
+			class="inputbox"
+			
+		/>
+		
+		<field type="note" name="note_advanced_settings" label="JOOMTHUND_ADVANCED_SETTINGS" class="alert alert-info col-12 m-3 text-center"  />
+		
+		<field
+    	    name="object_fit"
+    		type="list"
+    		default="cover"
+    		label="JOOMTHUND_OBJECT_FIT"
+    	    
+    	    >
+    	    <option value="scale-down">scale down</option>
+    	    <option value="contain">contain</option>
+    	    <option value="cover">cover</option>
+    	    <option value="fill">fill</option>
+	</field>
+</form>

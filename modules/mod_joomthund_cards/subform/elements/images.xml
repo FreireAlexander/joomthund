@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form>
+    <field type="note" name="note_basics" label="JOOMTHUND_BASIC_SETTINGS" class="alert alert-info col-12 m-3 -center"  />
+	
+	<field
+	    name="border_width"
+	    type="text"
+	    default="1px"
+	    label="JOOMTHUND_BORDER_WIDTH"
+	    hint="JOOMTHUND_CSS_UNITS_DESC"
+	    description="JOOMTHUND_CSS_UNITS_DESC"
+	
+	/>
+	<field
+	    name="border_style"
+	    type="list"
+	    default="solid"
+	    label="JOOMTHUND_BORDER_STYLE"
+	
+	>
+	        <option value="solid">solid</option>
+	        <option value="dashed">dashed</option>
+	        <option value="dotted">dotted</option>
+	        <option value="double">double</option>
+	        <option value="groove">groove</option>
+	        <option value="inset">inset</option>
+	        <option value="outset">outset</option>
+	        <option value="ridge">ridge</option>
+	</field>
+	
+	<field
+	    name="border_radius"
+	    type="text"
+	    default="50%"
+	    label="JOOMTHUND_BORDER_RADIUS"
+	    hint="JOOMTHUND_CSS_UNITS_DESC"
+	    description="JOOMTHUND_CSS_UNITS_DESC"
+	
+	/>
+	
+	<field
+	    name="border_color"
+	    type="colorpicker"
+	    default="silver"
+	    label="JOOMTHUND_BORDER_COLOR"
+	    class="inputbox"
+	
+	/>
+	
+	<field
+	    name="border_color__hover"
+	    type="colorpicker"
+	    default="cadetblue"
+	    label="JOOMTHUND_BORDER_COLOR__HOVER"
+	    class="inputbox"
+	
+	/>
+
+        <field type="note" name="note_advanced" label="JOOMTHUND_ADVANCED_SETTINGS" class="alert alert-info col-12 m-3 -center"  />    
+    
+    <field
+		name="object_fit"
+		type="list"
+		default="contain"
+		label="JOOMTHUND_OBJECT_FIT"
+		>
+		    <option value="contain">contain</option>
+		    <option value="cover">cover</option>
+		    <option value="fill">fill</option>
+		    <option value="scale-down">scale-down</option>
+		</field>
+   
+
+	<field
+		name="transform"
+		type="text"
+		default="scale(0.9)"
+		label="JOOMTHUND_TRANSFORMATION"
+		hint="JOOMTHUND_TRANSFORM_DESCRIPTION"
+		description="JOOMTHUND_TRANSFORM_DESCRIPTION"
+
+	/>
+		
+	<field
+		name="transform__hover"
+		type="text"
+		default="scale(1)"
+		label="JOOMTHUND_TRANSFORMATION__HOVER"
+		hint="JOOMTHUND_TRANSFORM_DESCRIPTION"
+		description="JOOMTHUND_TRANSFORM_DESCRIPTION"
+	/>
+</form>

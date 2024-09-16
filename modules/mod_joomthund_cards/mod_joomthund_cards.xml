@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>MOD_JOOMTHUND_CARDS_NAME</name>
+	<author>Freire Alexander Palomino Palma</author>
+	<creationDate>2024-04</creationDate>
+	<copyright>(C) 2024 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>freirealexander0214@gmail.com</authorEmail>
+	<authorUrl>www.freirealexander.github.io</authorUrl>
+	<version>1.0.1</version>
+	<description>MOD_JOOMTHUND_CARDS_DESCRIPTION</description>
+	<files>
+		<filename module="mod_joomthund_cards">mod_joomthund_cards.php</filename>
+		<folder>admin</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>subform</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>helper.php</filename>
+		<filename>mod_joomthund_cards.xml</filename>
+	</files>
+	<languages>
+	    <language tag="en-GB">/language/en-GB/mod_joomthund_cards.sys.ini</language>
+		<language tag="en-GB">/language/en-GB/mod_joomthund_cards.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_joomthund_cards/admin/fields">
+			<fieldset name="basic">
+			    
+			    <field
+						name="layout"
+						type="modulelayout"
+						label="JOOMTHUND_LAYOUT"
+						class="custom-select"
+						default="default"
+				/>
+			    
+                <field type="note" name="note1" label="MOD_JOOMTHUND_CARDS_NOTE1" class="alert alert-info col-12 text-center" />
+                <field
+						name="columns"
+						type="number"
+						label="MOD_JOOMTHUND_CARDS_COLUMNS"
+						min="1"
+						max="100"
+						step="1"
+						default="3"
+						
+				/>
+				<field
+						name="cards_"
+						type="subform"
+						label="MOD_JOOMTHUND_CARDS_CARDS"
+						min="1"
+						max="100"
+						required="true"
+						formsource="/modules/mod_joomthund_cards/subform/cards.xml"
+						multiple="true"
+						layout="joomla.form.field.subform.repeatable"
+						buttons="add,remove,move"
+				/>
+			</fieldset>
+			<fieldset name="ColorPalette" label="JOOMTHUND_COLOR_PALETTE">
+				<field
+						name="colorPalette_"
+						type="subform"
+						label="JOOMTHUND_COLOR_PALETTE_FIELD"
+						min="1"
+						max="100"
+						default='{"colors:[{"colors_name":"‏‏‎‎‎‎‎‎", "colors_value":"rgba(37,7,3,1)", }]"}'
+						formsource="/modules/mod_joomthund_cards/subform/colorPalette.xml"
+						multiple="true"
+						layout="joomla.form.field.subform.repeatable"
+						buttons="add,remove,move"
+				/>
+			</fieldset>
+			<fieldset name="style" label="JOOMTHUND_STYLE">
+			    
+				
+			    <field
+                name="appearance"
+                type="radio"
+                label="MOD_JOOMTHUND_CARDS_ELEMENTS"
+                default="1"
+                class="btn-group"
+	            >
+                    <option value="1">MOD_JOOMTHUND_CARDS_ELEMENTS_1</option>
+                    <option value="2">MOD_JOOMTHUND_CARDS_ELEMENTS_2</option>
+                    <option value="3">MOD_JOOMTHUND_CARDS_ELEMENTS_3</option>
+                </field>
+                
+                
+                <field
+						name="container_settings_"
+						type="subform"
+						label="MOD_JOOMTHUND_CARDS_CONTAINER_SETTINGS"
+						formsource="/modules/mod_joomthund_cards/subform/elements/container.xml"
+						buttons="add,remove,move"
+						showon="appearance:1"
+				/>
+                
+                <field type="note" name="note2" label="MOD_JOOMTHUND_CARDS_NOTE2" class="alert alert-info col-12 text-center" showon="appearance:2"/>
+                
+                <field
+						name="card_settings_"
+						type="subform"
+						label="MOD_JOOMTHUND_CARDS_CARD_SETTINGS"
+						formsource="/modules/mod_joomthund_cards/subform/elements/card.xml"
+						buttons="add,remove,move"
+						showon="appearance:2"
+				/>
+				
+				<field type="note" name="note3" label="MOD_JOOMTHUND_CARDS_NOTE3" class="alert alert-info col-12 text-center" showon="appearance:2"/>
+                
+                <field
+						name="image_settings_"
+						type="subform"
+						label="MOD_JOOMTHUND_CARDS_IMAGE_SETTINGS"
+						formsource="/modules/mod_joomthund_cards/subform/elements/images.xml"
+						buttons="add,remove,move"
+						showon="appearance:2"
+				/>
+				
+				<field type="note" name="note4" label="MOD_JOOMTHUND_CARDS_NOTE4" class="alert alert-info col-12 text-center" showon="appearance:3"/>
+				
+				<field
+						name="title_"
+						type="subform"
+						label="MOD_JOOMTHUND_CARDS_TITLE_SETTINGS"
+						formsource="/modules/mod_joomthund_cards/subform/elements/texts.xml"
+						buttons="add,remove,move"
+						showon="appearance:3"
+				/>
+				
+				<field type="note" name="note5" label="MOD_JOOMTHUND_CARDS_NOTE5" class="alert alert-info col-12 text-center" showon="appearance:3"/>
+				
+				<field
+						name="description_"
+						type="subform"
+						label="MOD_JOOMTHUND_CARDS_DESCRIPTION_SETTINGS"
+						formsource="/modules/mod_joomthund_cards/subform/elements/texts.xml"
+						buttons="add,remove,move"
+						showon="appearance:3"
+				/>
+				
+			</fieldset>
+		</fields>
+	</config>
+</extension>

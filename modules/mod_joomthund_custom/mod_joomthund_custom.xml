@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension type="module" client="site" method="upgrade">
+	<name>MOD_JOOMTHUND_CUSTOM_NAME</name>
+	<author>Freire Alexander Palomino Palma</author>
+	<creationDate>2024-04</creationDate>
+	<copyright>(C) 2024 Open Source Matters, Inc.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>freirealexander0214@gmail.com</authorEmail>
+	<authorUrl>www.freirealexander.github.io</authorUrl>
+	<version>1.0.1</version>
+	<description>MOD_JOOMTHUND_CUSTOM_DESCRIPTION</description>
+	<files>
+		<filename module="mod_joomthund_custom">mod_joomthund_custom.php</filename>
+		<folder>admin</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>subform</folder>
+		<folder>tmpl</folder>
+		<folder>language</folder>
+		<filename>helper.php</filename>
+		<filename>mod_joomthund_custom.xml</filename>
+	</files>
+	<languages>
+	    <language tag="en-GB">/language/en-GB/mod_joomthund_custom.sys.ini</language>
+		<language tag="en-GB">/language/en-GB/mod_joomthund_custom.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_joomthund_custom/admin/fields">
+			<fieldset name="basic">
+			    <field
+						name="layout"
+						type="modulelayout"
+						label="JOOMTHUND_LAYOUT"
+						class="custom-select"
+						default="default"
+				/>
+			   
+			</fieldset>
+			
+			<fieldset name="Html" label="HTML">
+			    
+			    <field 
+			        name="html" 
+			        type="editor" 
+			        label="HTML Editor" 
+			        description=""
+			        filter="raw"
+			        buttons="true"
+			        hide="readmore,pagebreak,modules"
+			        editor="alternative"
+                />
+			   
+			</fieldset>
+			<fieldset name="CSS" label="CSS">
+			    
+			    <field 
+			        name="css" 
+			        type="editor" 
+			        label="CSS Editor" 
+			        description=""
+			        filter="raw" 
+                />
+			   
+			</fieldset>
+			
+			<fieldset name="JS" label="JavaScript">
+			    
+			    <field 
+			        name="js" 
+			        type="editor" 
+			        label="Javascript Editor" 
+			        description=""
+			        filter="raw" 
+                />
+			   
+			</fieldset>
+			
+		</fields>
+	</config>
+</extension>
