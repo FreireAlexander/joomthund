@@ -1,0 +1,16 @@
+@media only screen and (max-width: 900px)  {
+    .sidebar__button{
+        display: flex;
+        transform: scale(1);
+        background-color: transparent;
+        span{
+            font-size: 32px;
+        }
+    }
+    .navbar__menu, .button--navbar{
+        display: none;
+    }
+    .sidebar{
+        display: block;
+    }
+}

@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension version="2.5" type="template" method="upgrade" group="template" client="site">
+	<name>joomthund</name>
+	<creationDate>2024-04-21</creationDate>
+	<author>Freire Palomino Palma</author>
+	<authorEmail>freirealexander0214@gmail.com</authorEmail>
+	<authorUrl>https://freirealexander.github.io/</authorUrl>
+	<copyright>(C) 2024 Open Source Matters, Inc.</copyright>
+	<license>GNU/GPL</license>
+	<version>1.0.0-beta</version>
+	<description>JOOMTHUND_DESCRIPTION</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>error.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>template_preview.png</filename>
+		<folder>admin</folder>
+        <folder>html</folder>
+		<folder>language</folder>
+		<folder>subform</folder>
+		<folder>themes</folder>
+	</files>
+	<positions>
+		<position>navbar-menu</position>
+		<position>navbar-button</position>
+		<position>footer</position>
+	</positions>
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_joomthund.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_joomthund.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params" addfieldpath="/templates/joomthund/admin/fields">
+			<fieldset	name="basic">
+			    <field type="note" name="note1" label="NOTE1" class="alert alert-info col-12 text-center" />
+			    <field 
+					name="theme"
+					type="folderlist"
+					label="JOOMTHUND_FIELD_THEME"
+					default="default"
+					directory="templates/joomthund/themes"
+					stripext=""
+					/>
+				<field type="note" name="note2" label="NOTE2" class="alert alert-info col-12 text-center" />
+				<field
+					name="logoFile"
+					type="media"
+					schemes="http,https,ftp,ftps,data,file"
+					validate="url"
+					relative="true"
+					default=""
+					label="JOOMTHUND_FIELD_LOGO"
+				/>
+				<field
+					name="rotatelogofile"
+					type="radio"
+					default="false"
+					label="JOOMTHUND_FIELD_ROTATELOGO"
+					description="JOOMTHUND_FIELD_ROTATELOGO_DESC"
+					layout="joomla.form.field.radio.switcher"
+				>
+				<option value="false">JHIDE</option>
+				<option value="true">JSHOW</option>
+				</field>
+				<field
+					name="logoFavicon"
+					type="media"
+					schemes="http,https,ftp,ftps,data,file"
+					validate="url"
+					relative="true"
+					default=""
+					label="JOOMTHUND_FIELD_FAVICON"
+				/>
+				<field type="note" name="note3" label="NOTE3" class="alert alert-info col-12 text-center" />
+				<field
+						name="brandname_"
+						type="subform"
+						label="JOOMTHUND_FIELD_BRANDNAME"
+						deswcription="JOOMTHUND_FIELD_BRANDNAME_DESC"
+						min="1"
+						max="3"
+						required="true"
+						formsource="/templates/joomthund/subform/brandname.xml"
+						multiple="true"
+						layout="joomla.form.field.subform.repeatable"
+						buttons="add,remove,move"
+				/>
+				<field 
+                        name="brandnamecolor" 
+                        type="colorpicker" 
+                        default="rgba(0,6,18,1)" 
+                        format="rgba"
+                        label="JOOMTHUND_FIELD_BRANDNAME__COLOR"
+                        
+                />
+				<field 
+                        name="slogan" 
+                        type="text" 
+                        default="Slogan" 
+                        label="JOOMTHUND_FIELD_SLOGAN"
+                        
+                />
+                <field 
+                        name="slogancolor" 
+                        type="colorpicker" 
+                        default="rgba(0,6,18,1)" 
+                        format="rgba"
+                        label="JOOMTHUND_FIELD_SLOGAN__COLOR"
+                        
+                />
+			</fieldset>
+			<fieldset name="theme" label="JOOMTHUND_FIELDSET_COLORPALETTE">
+			    <field
+						name="colorPalette_"
+						type="subform"
+						label="JOOMTHUND_COLORPALETTE"
+						description="JOOMTHUND_COLORPALETTE_DESC"
+						min="1"
+						max="100"
+						required="true"
+						formsource="/templates/joomthund/subform/colorPalette.xml"
+						multiple="true"
+						layout="joomla.form.field.subform.repeatable"
+						buttons="add,remove,move"
+				/>
+			</fieldset>
+			
+			<fieldset name="style" label="JOOMTHUND_FIELDSET_STYLE">
+			    <field
+                    name="appearance"
+                    type="radio"
+                    label="JOOMTHUND_APPEARANCE"
+                    description="JOOMTHUND_APPEARANCE_DESC"
+                    default="1"
+                    class="btn-group"
+	            >
+                    <option value="1">JOOMTHUND_APPEARANCE_OPTION1</option>
+                    <option value="2">JOOMTHUND_APPEARANCE_OPTION2</option>
+                    <option value="3">JOOMTHUND_APPEARANCE_OPTION3</option>
+
+                </field>
+                <!-- Header and Navbar -->
+                
+                <field 
+                    name="header" 
+                    type="colorpicker"  
+                    default="rgba(251,253,253,0.9)" 
+                    format="rgba"
+                    showon="appearance:1"
+                    label="JOOMTHUND_HEADER"   
+                />
+                
+                <field type="note" name="note4" label="NOTE4" class="alert alert-info col-12 text-center" showon="appearance:1"/>
+                
+                
+                <field 
+                        name="navbarlinksbackground" 
+                        type="colorpicker" 
+                        default="rgba(251,253,253,0.9)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_NAVBARLINK__BG"
+                        
+                />
+                <field 
+                        name="navbarlinksbackgroundhover" 
+                        type="colorpicker"  
+                        default="rgba(251,253,253,0.9)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_NAVBARLINK__BG__HOVER"
+                        
+                />
+                <field 
+                        name="navbarlinkscolor" 
+                        type="colorpicker" 
+                        default="rgba(0,6,18,1)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_NAVBARLINK__COLOR"
+                        
+                />
+                <field 
+                        name="navbarlinkshover" 
+                        type="colorpicker" 
+                        default="rgba(0,66,182,1)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_NAVBARLINK__COLOR__HOVER"
+                        
+                />
+                
+                
+                <field type="note" name="note5" label="NOTE5" class="alert alert-info col-12 text-center" showon="appearance:1"/>
+                
+                
+                <field 
+                        name="submenubackground" 
+                        type="colorpicker" 
+                        default="rgba(251,253,253,1)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SUBMENU__BG"
+                        
+                />
+                <field 
+                        name="submenubackgroundhover" 
+                        type="colorpicker"  
+                        default="rgba(0,66,182,1)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SUBMENU__BG__HOVER"
+                        
+                />
+                <field 
+                        name="submenucolor" 
+                        type="colorpicker" 
+                        default="rgba(0,6,18,1)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SUBMENU__COLOR"
+                        
+                />
+                <field 
+                        name="submenuhover" 
+                        type="colorpicker"  
+                        default="rgba(251,253,253,1)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SUBMENU__COLOR__HOVER"
+                        
+                />
+                
+                <field type="note" name="note6" label="NOTE6" class="alert alert-info col-12 text-center" showon="appearance:1"/>
+                
+                <field 
+                        name="sidebar" 
+                        type="colorpicker"  
+                        default="rgba(251,253,253,1)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SIDEBAR"
+                        
+                />
+                <field 
+                        name="sidebaroverlay" 
+                        type="colorpicker"  
+                        default="transparent" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SIDEBAR_OVERLAY"
+                        
+                />
+                
+                <field 
+                        name="sidebar_button__backgroundcolor" 
+                        type="colorpicker" 
+                        default="rgba(251,253,253,1)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SIDEBAR_BUTTON"
+                        
+                />
+                
+                <field 
+                        name="sidebar_button__backgroundhover" 
+                        type="colorpicker" 
+                        default="rgba(0,66,182,1)" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SIDEBAR_BUTTON__HOVER"
+                        
+                />
+                <field 
+                        name="sidebar_button__color" 
+                        type="colorpicker" 
+                        default="black" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SIDEBAR_BUTTONCOLOR"
+                        
+                />
+                <field 
+                        name="sidebar_button__colorhover" 
+                        type="colorpicker" 
+                        default="white" 
+                        format="rgba"
+                        showon="appearance:1"
+                        label="JOOMTHUND_SIDEBAR_BUTTONCOLOR__HOVER"
+                        
+                />
+                
+                
+                
+                
+				<!-- Fonts and Links -->
+                <field 
+                        name="color" 
+                        type="colorpicker" 
+                        default="rgba(0,6,18,1)" 
+                        format="rgba"
+                        showon="appearance:2"
+                        label="JOOMTHUND_COLOR"
+                        
+                    />
+                <field 
+                        name="coloralternate" 
+                        type="colorpicker" 
+                        default="rgba(251,253,253,1)" 
+                        format="rgba"
+                        showon="appearance:2"
+                        label="JOOMTHUND_COLOR_ALTERNATE"
+                        
+                />
+                <field 
+                        name="link" 
+                        type="colorpicker" 
+                        default="rgba(76,80,89,1)" 
+                        format="rgba"
+                        showon="appearance:2"
+                        label="JOOMTHUND_LINK"
+                        
+                />
+                <field 
+                        name="linkhover" 
+                        type="colorpicker"  
+                        default="rgba(0,66,182,1)" 
+                        format="rgba"
+                        showon="appearance:2"
+                        label="JOOMTHUND_LINK__HOVER"
+                        
+                />
+                <field 
+                        name="linkactive" 
+                        type="colorpicker" 
+                        default="rgba(0,138,103,1)" 
+                        format="rgba"
+                        showon="appearance:2"
+                        label="JOOMTHUND_LINK__ACTIVE"
+                        
+                />
+        
+        
+        <!-- Containers -->
+                <field 
+                        name="background" 
+                        type="colorpicker" 
+                        default="rgba(251,253,253,1)" 
+                        format="rgba"
+                        showon="appearance:3"
+                        label="JOOMTHUND_BACKGROUND"   
+                />
+                 <field 
+                        name="section__withd" 
+                        type="text" 
+                        default="80%" 
+                        format="rgba"
+                        showon="appearance:3"
+                        label="JOOMTHUND_SECTION_WITHD"
+                        description="JOOMTHUND_STYLE_NUMBER_DESCRIPTION"
+                />
+        
+        
+			</fieldset>
+		</fields>
+	</config>
+</extension>
