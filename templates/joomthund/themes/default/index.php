@@ -164,7 +164,7 @@ body .calendly-badge-widget .calendly-badge-content span{
                     echo '<p class="brand__name">'. $line->line .'</p>';
                     }
                 ?>
-                    <p class="brand__slogan"><?php echo $slogan; ?></p>
+                    <p class="brand__slogan">Slogan : <?php echo $slogan; ?></p>
                 </div>
             </a>
             <div class="flex-container">

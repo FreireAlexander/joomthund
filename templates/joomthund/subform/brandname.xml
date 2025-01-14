@@ -4,6 +4,7 @@
             name="line" 
             type="text" 
             default="Brand Name"
-            label="JOOMTHUND_FIELD_BRANDNAME__LINE"       
+            label="JOOMTHUND_FIELD_BRANDNAME__LINE" 
+                  
         />
 </form>

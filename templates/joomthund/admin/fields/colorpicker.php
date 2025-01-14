@@ -16,6 +16,7 @@ class JFormFieldColorpicker extends ListField {
             justify-content: space-between;
             align-items: center;
             width: 100%;
+            
         }
         #container__color-ball-'. $this->id .'{
             display: grid;

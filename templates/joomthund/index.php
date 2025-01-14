@@ -38,7 +38,7 @@ if ($this->params->get('logoFile')) {
                     $logo .= '<p>'. $line->line .'</p>';
                     }
 } else {
-    $logo .= '<p>No Log o</p>';
+    $logo .= '<p>LOGO NOT FOUND</p>';
 }
 
 include_once 'themes/' . $theme . '/index.php';
