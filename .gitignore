@@ -705,4 +705,11 @@
 /web.config.txt
 *Zone.Identifier
 /administrator/*
-
+api/*
+language/*
+layouts/*
+libraries/*
+media/*
+modules/mod_articles/*
+plugins/*
+templates/cassiopeia/*
